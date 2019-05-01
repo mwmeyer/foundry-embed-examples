@@ -1,0 +1,37 @@
+<html>
+<body>
+<h1>object parameter content embed</h1>
+<pre>
+&ltscript&gt
+function exitTimes(){
+  alert('done!!');
+}
+everFiProgramContentIframeOptions = {
+  account: 'oneorg',
+  program: 'p1',
+  playlist: 'financial-health',
+  module: '33',
+  onExit: 'exitTimes'
+}
+&lt/script&gt
+&ltscript id="everfi-program-content-iframer"
+        src="http://fidev-next.net/javascripts/program-content-iframer.js"&gt
+&lt/script&gt
+</pre>
+<script>
+function exitTimes(){
+  alert('done!!');
+}
+everFiProgramContentIframeOptions = {
+  account: 'oneorg',
+  program: 'p1',
+  playlist: 'financial-health',
+  module: '33',
+  onExit: 'exitTimes'
+}
+</script>
+<script id="everfi-program-content-iframer"
+        src="http://fidev-next.net/javascripts/program-content-iframer.js">
+</script>
+</body>
+</html>

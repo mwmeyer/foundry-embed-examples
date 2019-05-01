@@ -1,0 +1,25 @@
+<html>
+<body>
+<p>The embed script tag should be included in partner webiste HTML like this:</p>
+<pre>
+&ltscript id="everfi-program-content-iframer"
+        src="http://fidev-next.net/javascripts/program-content-iframer.js"&gt&lt/script&gt
+</pre>
+
+<ul>
+  <li>a global object "everFiProgramContentIframeOptions" is used to set parameters</li>
+  <li>data attributes on the script tag are used to override values in the src URL</li>
+  <li>query parameters in the src URL are used if not provided by either of the first two methods</li>
+  <li>module can be provided as the ID or as the Next content slug</li>
+  <li>additional params for the URL can be added in any of the three spots where account/program/playlist/module are set</li>
+  <li>and will be added as query string parameters to the embed URL</li>
+  <li>account, program, playlist, and module are all required</li>
+  <li>"fidev-next.net" should be replaced with the desired next environment domain ( either "everfi-next-dev.net", "everfi-next-staging.net", or "everfi-next.net" )</li>
+</ul>
+
+<p>Examples</p>
+<a href="./object-param.html">Object Parameter Embed</a>
+<a href="./data-param.html">Data Parameter Embed</a>
+<a href="./query-param.html">Query Parameter Embed</a>
+</body>
+</html>
